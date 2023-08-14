@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="">
+    <meta name="author" content="Themepixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="#">
+
+    <title>MDMA DRS</title>
+    {% load static %}
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="{% static 'lib/remixicon/fonts/remixicon.css' %}">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+  </head>
+  <body class="page-sign d-block py-0">
+
+    {% block body %}{% endblock body %}
+
+    <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script>
+      'use script'
+
+      var skinMode = localStorage.getItem('skin-mode');
+      if(skinMode) {
+        $('html').attr('data-skin', 'dark');
+      }
+    </script>
+  </body>
+</html>
